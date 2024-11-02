@@ -1,0 +1,193 @@
+server.contextPath:/meterdb
+server.port:7091
+ 
+#enable/disbale to run it on https
+#server.ssl.keyStore: classpath:keystore.jks
+#server.ssl.keyStorePassword: allpassword
+#server.ssl.trustStore: classpath:truststore.jks
+#server.ssl.trustStorePassword: allpassword
+#server.ssl.clientAuth:Need
+ 
+#cassandra spring db connectivity configs
+spring.data.cassandra.keyspace-name=hes_db
+#spring.data.cassandra.schema-action=CREATE_IF_NOT_EXISTS
+spring.data.cassandra.contact-points=20.235.72.246
+spring.data.cassandra.port=9042
+spring.data.cassandra.user=sa
+spring.data.cassandra.password=sa1@
+spring.data.cassandra.protocol-version=V5
+ 
+#presto spring db connectivity configs
+spring.datasource.presto.name=presto
+spring.datasource.presto.driver-class-name=com.facebook.presto.jdbc.PrestoDriver
+spring.datasource.presto.url=jdbc:presto://20.235.72.246:7070/cassandra/
+spring.datasource.presto.username=sa
+spring.datasource.presto.testWhileIdle = true
+spring.datasource.presto.validationQuery = SELECT 1
+ 
+schedule.process.metercommcount.cron=40 55 * * * *
+ 
+command.meter.retry : 30
+command.firmware.upgrade.retry:100
+command.meter.configRetry:40
+ 
+#This is required and treated as number of days from current date to read range wise lp/dlp data.
+command.meter.lastLPRead:50
+ 
+#Commands on meter
+meter.dlms.app.address:http://localhost:7601/meterComm
+meter.fullData.read:/historyData/fullData
+meter.fullPrepayData.read:/config/reads/data
+meter.firmware.upgrade:/historyData/firmware/upgrade
+meter.fullData.config.write:/configs/fullConfigurationProcess
+meter.instantaneous.read:/historyData/instan
+meter.dailyLP.read:/historyData/dailyLoadProfile
+meter.deltaLP.read:/historyData/deltaLoadProfile
+meter.billingData.read:/historyData/billingData
+meter.powerRelatedEvents.read:/historyData/powerRelatedEvents
+meter.voltageRelatedEvents.read:/historyData/voltageRelatedEvents
+meter.transactionRelatedEvents.read:/historyData/transactionRelatedEvents
+meter.currentRelatedEvents.read:/historyData/currentRelatedEvents
+meter.otherRelatedEvents.read:/historyData/otherRelatedEvents
+meter.nonRolloverEvents.read:/historyData/nonRolloverEvents
+meter.controlRelatedEvents.read:/historyData/controlRelatedEvents
+meter.namePlate.read:/historyData/getNamePlates
+meter.connect.write:/commandToMeter/connect
+meter.disconnect.write:/commandToMeter/disconnect
+ 
+meter.config.enablePaymentMode:/configs/enablePaymentMode
+meter.config.enableMeteringMode:/configs/enableMeteringMode
+meter.config.lastTokenRechargeAmount:/configs/lastTokenRechargeAmount
+meter.config.lastTokenRechargeTime:/configs/lastTokenRechargeTime
+meter.config.totalAmountAtLastRecharge:/configs/totalAmountAtLastRecharge
+meter.config.currentBalanceAmount:/configs/currentBalanceAmount
+meter.config.currentBalanceTime:/configs/currentBalanceTime
+ 
+meter.config.loadLimitKw:/configs/loadLimit/kw
+meter.config.enableDisableDisControl:/configs/enableDisableDisconnectControl
+meter.config.rtcClock:/configs/clock
+meter.config.activityCalendar:/configs/activityCalendar
+meter.config.demandIntegrationPeriod:/configs/demandIntegrationPeriod
+meter.config.profileCapturePeriod:/configs/profileCapturePeriod
+meter.config.coverOpen:/configs/coverOpen
+meter.config.mdReset:/configs/mdReset
+meter.config.instantIPPush:/configs/instantIPPush
+meter.config.alertIPPush:/configs/alertIPPush
+ 
+meter.config.activitySchedulePush:/configs/activitySchedulePush
+meter.config.billingDates:/configs/billingDates
+ 
+#Event Type List Property File
+meter.eventTypeList: C:\\Nitin\\Workspace\\meter-db-management-app\\src\\main\\resources\\EventTypeList.properties
+meter.eventTypeCategoryList: C:\\Nitin\\Workspace\\meter-db-management-app\\src\\main\\resources\\EventTypeCategoryList.properties
+#Meter Division Factor 
+meter.divFactor: C:\\Nitin\\Workspace\\meter-db-management-app\\src\\main\\resources\\meterDivFactorsList.properties
+ 
+#version v2 changes
+#Application Property File Path
+meter.applicationProperty : E:\\HES Workspace\\api-meter-db-service\\src\\main\\resources\\application.properties
+ 
+#This is required and treated as number of days from current date to read range wise device (command & configs) logs data.
+processBatch.deviceCommand.backDays:100
+ 
+#should be greater then below mentioned time to perform disconnect command
+happyhour.start.time:23:00:00
+#should be less then below mentioned time to perform disconnect command
+happyhour.end.time:10:30:00
+ 
+# sechedule time to get deviceCommand & Config logs batch data
+schedule.process.deviceConfigBatchLog.cron=00 00/10 * * * *
+schedule.process.deviceCommandBatchLog.cron=00 00/10 * * * *
+schedule.process.deviceConfigReadBatchLog.cron=00 00/10 * * * *
+#Enable/Disable batch process
+schedule.process.update.batchLog.enable = N
+ 
+meter.applicationProperties.update : N
+meter.applicationProperties.read.update = 0 0 0 * * *
+ 
+#Push Event Type List Property File
+meter.pushEventsList: D:\\HES Workspace\\meter-db-management-app\\src\\main\\resources\\pushEvents.properties
+ 
+#This is required and treated as number of days from current date to  range wise read non dlms gas meter command logs data.
+gasMeter.CommandLog.backDays:10
+ 
+#This is use for set non dlms gas meter command logs data read time.
+schedule.process.nonDLMSGasMeterCommandLogs.cron=00 00 00 * * *
+#V3
+meter.singleConnection.command: /hes/v3/single-connection/perform/cmd
+meter.singleConnection.rf.command: /hes/rf/v3/single-connection/perform/cmd
+ 
+# This is use for connect dependent commanmds
+singleConnection.dependent.connect.commands: InstantaneousRead
+# This is use for disconnect dependent commanmds
+singleConnection.dependent.disconnect.commands: InstantaneousRead
+ 
+# this is use for process billing data
+schedule.process.billingData.cron=40 * * * * *
+meter.process.BillingData.enable : N
+ 
+# This is required and treated as number of days from current date to read range wise device (block load profile) logs data.
+processSla.blockLoad.backDays:1
+processSla.blockLoad.RangeTime:5
+processSla.dailyLoad.RangeTime:30
+ 
+schedule.process.dailySummary.cron = 0 0 0 * * *
+schedule.process.dailySummary.enable : N
+ 
+schedule.process.communicationSummary.cron=0 50 0 * * *
+schedule.process.communicationSummary.enable : N
+ 
+schedule.process.communicationSummary.cron=0 0 0 * * *
+schedule.process.communicationSummary.enable : N
+ 
+#Properties for External URLs to push data
+meter.push.external.enable:Y
+meter.push.daily.billing:https://hesdevapi.ugoerp.com/api/mdm/daily-billing-data-push
+ 
+#this is use for reload property data like master pwds , div factor and events property.
+schedule.process.reloadProperty.cron=0 0 0-23/1 * * *
+schedule.process.reloadProperty.enable : N
+ 
+#Obis script List Property File
+meter.obisCodeList: D:\\HES Workspace\\meter-db-management-app\\src\\main\\resources\\obisCodeList.properties
+
+#Connection pool configuration
+spring.data.cassandra.pool.max-size=50
+spring.data.cassandra.pool.idle-timeout=240
+spring.data.cassandra.pool.heartbeat.interval=30
+
+# HikariCP Connection Pool settings for Presto
+spring.datasource.presto.hikari.minimum-idle=5
+spring.datasource.presto.hikari.maximum-pool-size=20
+spring.datasource.presto.hikari.idle-timeout=200000
+spring.datasource.presto.hikari.max-lifetime=300000
+spring.datasource.presto.hikari.connection-timeout=60000
+spring.datasource.presto.hikari.pool-name=PrestoHikariCP
+spring.datasource.presto.hikari.leak-detection-threshold=30000
+spring.datasource.presto.hikari.validation-timeout=50000
+
+#set maximum day to once read data range wise for dailyLP and deltaLP.
+max.day.range.once.read : 1
+
+#Set this as Y if we want to enable RF schedule command otherwise schedule command will send for celluler meter.
+schedule.command.rf.enable : N
+
+# Set the logging level for the entire application
+logging.level.root=INFO
+ 
+# Set the logging level for a specific package
+logging.level.com.yourpackage=DEBUG
+ 
+# Specify the log file name and path
+logging.file.name=logs/app.log
+ 
+# Specify the log pattern for the console
+logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss} - %msg%n
+ 
+# Specify the log pattern for the file
+logging.pattern.file=%d{yyyy-MM-dd} - %msg%n
+ 
+logging.file.path=logs
+logging.file.max-history=15
+logging.file.max-size=20MB
+has context menu

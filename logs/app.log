@@ -1,0 +1,230 @@
+2024-11-02 - Starting MeterDBAppStarter on DESKTOP-MEQAIMM with PID 12948 (D:\HES\meter-db-management-app\target\classes started by INV in D:\HES\meter-db-management-app)
+2024-11-02 - No active profile set, falling back to default profiles: default
+2024-11-02 - Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2024-11-02 - Finished Spring Data repository scanning in 13ms. Found 0 Cassandra repository interfaces.
+2024-11-02 - Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2024-11-02 - Finished Spring Data repository scanning in 346ms. Found 0 Reactive Cassandra repository interfaces.
+2024-11-02 - Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2024-11-02 - Finished Spring Data repository scanning in 251ms. Found 78 Cassandra repository interfaces.
+2024-11-02 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-02 - Tomcat initialized with port(s): 7091 (http)
+2024-11-02 - Starting service [Tomcat]
+2024-11-02 - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2024-11-02 - Initializing Spring embedded WebApplicationContext
+2024-11-02 - Root WebApplicationContext: initialization completed in 5009 ms
+2024-11-02 - Detected Guava >= 19 in the classpath, using modern compatibility layer
+2024-11-02 - DataStax Java driver 3.11.0 for Apache Cassandra
+2024-11-02 - Could not load JNR C Library, native system calls through this library will not be available (set this logger level to DEBUG to see the full stack trace).
+2024-11-02 - Using java.lang.System clock to generate timestamps.
+2024-11-02 - Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+2024-11-02 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2024-11-02 - New Cassandra host /20.235.72.246:9550 added
+2024-11-02 - Intializing Meter Group info...
+2024-11-02 - Meter Group List collected from Store.
+2024-11-02 - Metere Group Info Loaded...
+2024-11-02 - Loading EventList Property File:---> 
+2024-11-02 - Loading Meter Div Factor Property File:---> 
+2024-11-02 - Division Factor File Loaded....
+2024-11-02 - Creating rest template to connect with rest client...
+2024-11-02 - PrestoHikariCP - Starting...
+2024-11-02 - PrestoHikariCP - Start completed.
+2024-11-02 - [LOCAL] [dev] [5.2.1] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [20.219.63.174]
+2024-11-02 - [LOCAL] [dev] [5.2.1] Could not find a matching address to start with! Picking one of non-loopback addresses.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Hazelcast Platform 5.2.1 (20221114 - 531032a) starting at [192.168.34.145]:5701
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Cluster name: dev
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Using TCP/IP discovery
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [192.168.34.145]:5701 is STARTING
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [20.219.63.174]:5701 is added to the blacklist.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [20.219.63.174]:5702 is added to the blacklist.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [20.219.63.174]:5703 is added to the blacklist.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] 
+
+Members {size:1, ver:1} [
+	Member [192.168.34.145]:5701 - 07ddf095-8005-45ea-a3f2-da39f88f71a2 this
+]
+
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [192.168.34.145]:5701 is STARTED
+2024-11-02 - Initializing ExecutorService 'taskExecutor'
+2024-11-02 - Initializing ExecutorService 'taskScheduler'
+2024-11-02 - Tomcat started on port(s): 7091 (http) with context path ''
+2024-11-02 - Started MeterDBAppStarter in 33.658 seconds (JVM running for 35.286)
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Invocations:3 timeouts:3 backup-timeouts:0
+2024-11-02 - Starting MeterDBAppStarter on DESKTOP-MEQAIMM with PID 20432 (D:\GIT\meter-db-management-app\target\classes started by INV in D:\GIT\meter-db-management-app)
+2024-11-02 - No active profile set, falling back to default profiles: default
+2024-11-02 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.global.meter.MeterDBAppStarter]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: class path resource [org/xml/sax/helpers/DefaultHandler.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 66
+2024-11-02 - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.global.meter.MeterDBAppStarter]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: class path resource [org/xml/sax/helpers/DefaultHandler.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:184)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.global.meter.MeterDBAppStarter.main(MeterDBAppStarter.java:52)
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: class path resource [org/xml/sax/helpers/DefaultHandler.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:61)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:50)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:686)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getSuperClass(ConfigurationClassParser.java:994)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:335)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:298)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	... 13 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:195)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:176)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:162)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:283)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:58)
+	... 27 common frames omitted
+2024-11-02 - Starting MeterDBAppStarter on DESKTOP-MEQAIMM with PID 13192 (D:\GIT\meter-db-management-app\target\classes started by INV in D:\GIT\meter-db-management-app)
+2024-11-02 - No active profile set, falling back to default profiles: default
+2024-11-02 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.global.meter.MeterDBAppStarter]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: class path resource [org/xml/sax/helpers/DefaultHandler.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 66
+2024-11-02 - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.global.meter.MeterDBAppStarter]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: class path resource [org/xml/sax/helpers/DefaultHandler.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:184)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.global.meter.MeterDBAppStarter.main(MeterDBAppStarter.java:52)
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: class path resource [org/xml/sax/helpers/DefaultHandler.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:61)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:50)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:686)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getSuperClass(ConfigurationClassParser.java:994)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:335)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:298)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	... 13 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:195)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:176)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:162)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:283)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:58)
+	... 27 common frames omitted
+2024-11-02 - Starting MeterDBAppStarter on DESKTOP-MEQAIMM with PID 10864 (D:\GIT\meter-db-management-app\target\classes started by INV in D:\GIT\meter-db-management-app)
+2024-11-02 - No active profile set, falling back to default profiles: default
+2024-11-02 - Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2024-11-02 - Finished Spring Data repository scanning in 8ms. Found 0 Cassandra repository interfaces.
+2024-11-02 - Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2024-11-02 - Finished Spring Data repository scanning in 196ms. Found 0 Reactive Cassandra repository interfaces.
+2024-11-02 - Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2024-11-02 - Finished Spring Data repository scanning in 153ms. Found 78 Cassandra repository interfaces.
+2024-11-02 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-11-02 - Tomcat initialized with port(s): 7091 (http)
+2024-11-02 - Starting service [Tomcat]
+2024-11-02 - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2024-11-02 - Initializing Spring embedded WebApplicationContext
+2024-11-02 - Root WebApplicationContext: initialization completed in 2612 ms
+2024-11-02 - Detected Guava >= 19 in the classpath, using modern compatibility layer
+2024-11-02 - DataStax Java driver 3.11.0 for Apache Cassandra
+2024-11-02 - Could not load JNR C Library, native system calls through this library will not be available (set this logger level to DEBUG to see the full stack trace).
+2024-11-02 - Using java.lang.System clock to generate timestamps.
+2024-11-02 - Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+2024-11-02 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2024-11-02 - New Cassandra host /20.235.72.246:9550 added
+2024-11-02 - Intializing Meter Group info...
+2024-11-02 - Meter Group List collected from Store.
+2024-11-02 - Metere Group Info Loaded...
+2024-11-02 - Loading EventList Property File:---> 
+2024-11-02 - Loading Meter Div Factor Property File:---> 
+2024-11-02 - Division Factor File Loaded....
+2024-11-02 - Creating rest template to connect with rest client...
+2024-11-02 - PrestoHikariCP - Starting...
+2024-11-02 - PrestoHikariCP - Start completed.
+2024-11-02 - [LOCAL] [dev] [5.2.1] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [20.219.63.174]
+2024-11-02 - [LOCAL] [dev] [5.2.1] Could not find a matching address to start with! Picking one of non-loopback addresses.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] 
+	+       +  o    o     o     o---o o----o o      o---o     o     o----o o--o--o
+	+ +   + +  |    |    / \       /  |      |     /         / \    |         |   
+	+ + + + +  o----o   o   o     o   o----o |    o         o   o   o----o    |   
+	+ +   + +  |    |  /     \   /    |      |     \       /     \       |    |   
+	+       +  o    o o       o o---o o----o o----o o---o o       o o----o    o   
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Copyright (c) 2008-2022, Hazelcast, Inc. All Rights Reserved.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Hazelcast Platform 5.2.1 (20221114 - 531032a) starting at [192.168.34.145]:5701
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Cluster name: dev
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Using TCP/IP discovery
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [192.168.34.145]:5701 is STARTING
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [20.219.63.174]:5703 is added to the blacklist.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [20.219.63.174]:5701 is added to the blacklist.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [20.219.63.174]:5702 is added to the blacklist.
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] 
+
+Members {size:1, ver:1} [
+	Member [192.168.34.145]:5701 - 3060e84e-b612-485d-bb95-19408765618a this
+]
+
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] [192.168.34.145]:5701 is STARTED
+2024-11-02 - Initializing ExecutorService 'taskExecutor'
+2024-11-02 - Initializing ExecutorService 'taskScheduler'
+2024-11-02 - Tomcat started on port(s): 7091 (http) with context path ''
+2024-11-02 - Started MeterDBAppStarter in 29.882 seconds (JVM running for 30.382)
+2024-11-02 - [192.168.34.145]:5701 [dev] [5.2.1] Invocations:3 timeouts:3 backup-timeouts:0
+2024-11-02 - Devices Command Batch Logs Scheduler Called for devices commands log
+2024-11-02 - Devices Config Read Batch Logs Scheduler Called
+2024-11-02 - Devices Config Batch Logs Scheduler Called
+2024-11-02 - Devices Command Batch Logs Scheduler Called for devices commands
+2024-11-02 - [Control connection] Cannot connect to any host, scheduling retry in 1000 milliseconds
+2024-11-02 - [Control connection] Cannot connect to any host, scheduling retry in 2000 milliseconds
+2024-11-02 - [Control connection] Cannot connect to any host, scheduling retry in 1000 milliseconds
+2024-11-02 - [Control connection] Cannot connect to any host, scheduling retry in 2000 milliseconds
